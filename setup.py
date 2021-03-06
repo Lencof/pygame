@@ -6,7 +6,7 @@
 # To configure, compile, install, just run this script.
 #     python setup.py install
 
-import io
+import io # use io
 
 with io.open('README.rst', encoding='utf-8') as readme:
     LONG_DESCRIPTION = readme.read()
@@ -24,16 +24,17 @@ METADATA = {
     "long_description": LONG_DESCRIPTION,
 }
 
-import re
-import sys
-import os
+import re # use re
+import sys # use sys
+import os # use os 
 
 # just import these always and fail early if not present
-import distutils
+import distutils # use distutils
 from setuptools import setup
 
 IS_PYPY = '__pypy__' in sys.builtin_module_names
 
+# create def compilation_help():
 def compilation_help():
     """ On failure point people to a web page for help.
     """
